@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from AccountUtils.AccountExcelUtil import ExcelUtil
 from business.RY_Login_Business import RYLoginBusiness
-from log.user_log import UserLog
+from log.user_log import get_logger
 from util.CheckErrorCapture import check_and_capture_error
 
 LOGIN_URL = "http://localhost:1025/login?redirect=%2Findex"
@@ -101,8 +101,7 @@ def driver(should_run):
 
 
 def test_login_account_from_excel(driver, should_run, row_num, username, password):
-    log = UserLog()
-    logger = log.get_log()
+    logger = get_logger()
 
     if not should_run:
         try:
@@ -122,7 +121,7 @@ def test_login_account_from_excel(driver, should_run, row_num, username, passwor
         # 执行过程中检查是否出现错误提示（有错误则截图并 fail）
         if check_and_capture_error(driver):
             pytest.fail(f"登录失败：{case_desc}")
-            
+
 
         logger.info(f"========== 执行成功：{case_desc} ==========")
     except Exception as e:
