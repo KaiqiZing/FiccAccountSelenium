@@ -1,7 +1,7 @@
 # coding=utf-8
 import time
 from util.read_ini import ReadIni
-from log.user_log import UserLog
+from log.user_log import get_logger
 
 
 class FindElement:
@@ -9,7 +9,7 @@ class FindElement:
 
     def __init__(self, driver):
         self.driver = driver
-        self.logger = UserLog().get_log()
+        self.logger = get_logger()
 
         # 【优点保留】预加载常用配置，避免反复进行磁盘 I/O 读取文件
         self.configs = {
