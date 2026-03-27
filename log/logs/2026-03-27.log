@@ -1,0 +1,33 @@
+2026-03-27 00:00:57,131 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-27 00:01:02,638 RY_UserManage_Handle.py--> RY_UserManage 20: INFO ----->RY_UserManage报错内容:Message: invalid argument: 'value' must be a string
+  (Session info: chrome=146.0.7680.165)
+
+2026-03-27 00:01:07,751 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-27 00:03:29,624 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-27 00:03:35,125 RY_UserManage_Handle.py--> RY_UserManage 20: INFO ----->RY_UserManage报错内容:Message: element not interactable
+  (Session info: chrome=146.0.7680.165)
+
+2026-03-27 00:03:40,233 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-27 00:04:39,243 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-27 00:04:44,704 RY_UserManage_Handle.py--> RY_UserManage 20: INFO ----->RY_UserManage报错内容:Message: javascript error: $ is not defined
+  (Session info: chrome=146.0.7680.165)
+
+2026-03-27 00:04:49,809 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-27 00:08:45,086 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-27 00:08:51,103 RY_UserManage_Handle.py--> RY_UserManage 20: INFO ----->RY_UserManage报错内容:Message: javascript error: $ is not defined
+  (Session info: chrome=146.0.7680.165)
+
+2026-03-27 00:08:56,228 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-27 00:11:14,894 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-27 00:11:17,950 RY_UserManage_Handle.py--> RY_UserManage 20: INFO ----->RY_UserManage报错内容:Message: javascript error: arguments[0].click is not a function
+  (Session info: chrome=146.0.7680.165)
+
+2026-03-27 00:11:23,055 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-27 00:13:23,900 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-27 00:13:32,032 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-27 00:14:15,688 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-27 00:14:23,866 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-27 00:15:16,614 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-27 00:15:24,751 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-27 13:24:11,397 user_log.py--> <module> 20: INFO ----->这是一条测试日志，你再也不用手动 close_handle 了！
+2026-03-27 13:24:14,286 user_log.py--> <module> 20: INFO ----->这是一条测试日志，你再也不用手动 close_handle 了！

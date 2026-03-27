@@ -1,0 +1,51 @@
+2026-03-25 16:49:44,567 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-25 16:49:49,685 RY_Login_Business.py--> LoginTest 40: ERROR ----->添加管理员操作 not found: Message: 
+
+2026-03-25 16:49:49,689 RY_LoginTestModule.py--> test_login_account_from_excel 40: ERROR ----->第2行：账号=admin 执行异常：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.155)
+
+2026-03-25 16:50:09,555 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第4行：账号=admin ==========
+2026-03-25 16:50:11,589 RY_Login_Business.py--> LoginTest 40: ERROR ----->添加管理员操作 not found: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.155)
+
+2026-03-25 16:50:11,590 RY_LoginTestModule.py--> test_login_account_from_excel 40: ERROR ----->第4行：账号=admin 执行异常：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.155)
+
+2026-03-25 16:50:39,985 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-25 16:50:45,292 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-25 16:50:47,337 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第3行：账号=admin ==========
+2026-03-25 16:50:52,114 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第4行：账号=admin ==========
+2026-03-25 17:22:06,077 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-25 17:22:11,385 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-25 17:22:13,477 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第3行：账号=admin ==========
+2026-03-25 17:22:18,275 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第4行：账号=admin ==========
+2026-03-25 17:23:38,345 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-25 17:23:43,583 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-25 17:23:45,607 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第3行：账号=admin ==========
+2026-03-25 17:23:46,256 CheckErrorCapture.py--> check_and_capture_error 40: ERROR ----->⚠️ 捕获到错误: 用户不存在/密码错误
+2026-03-25 17:23:50,270 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第4行：账号=admin ==========
+2026-03-25 17:23:50,957 CheckErrorCapture.py--> check_and_capture_error 40: ERROR ----->⚠️ 捕获到错误: 密码输入错误1次，帐户锁定1分钟
+2026-03-25 17:44:29,262 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-25 17:44:29,264 RY_Login_Business.py--> LoginTest 40: ERROR ----->RY 登录失败：'NoneType' object has no attribute 'split'
+2026-03-25 17:44:36,376 RY_LoginTestModule.py--> test_login_account_from_excel 40: ERROR ----->第2行：账号=admin 执行异常：'NoneType' object has no attribute 'split'
+2026-03-25 17:44:40,464 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第3行：账号=admin ==========
+2026-03-25 17:44:40,465 RY_Login_Business.py--> LoginTest 40: ERROR ----->RY 登录失败：'NoneType' object has no attribute 'split'
+2026-03-25 17:44:47,544 RY_LoginTestModule.py--> test_login_account_from_excel 40: ERROR ----->第3行：账号=admin 执行异常：'NoneType' object has no attribute 'split'
+2026-03-25 17:44:51,499 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第4行：账号=admin ==========
+2026-03-25 17:44:51,501 RY_Login_Business.py--> LoginTest 40: ERROR ----->RY 登录失败：'NoneType' object has no attribute 'split'
+2026-03-25 17:44:58,612 RY_LoginTestModule.py--> test_login_account_from_excel 40: ERROR ----->第4行：账号=admin 执行异常：'NoneType' object has no attribute 'split'
+2026-03-25 18:10:36,031 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-25 18:10:41,300 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-25 18:10:43,391 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第3行：账号=admin ==========
+2026-03-25 18:10:44,130 CheckErrorCapture.py--> check_and_capture_error 40: ERROR ----->⚠️ 捕获到错误: 用户不存在/密码错误
+2026-03-25 18:10:48,711 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第4行：账号=admin ==========
+2026-03-25 18:10:49,384 CheckErrorCapture.py--> check_and_capture_error 40: ERROR ----->⚠️ 捕获到错误: 密码输入错误1次，帐户锁定1分钟
+2026-03-25 18:11:14,816 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-25 18:11:15,441 CheckErrorCapture.py--> check_and_capture_error 40: ERROR ----->⚠️ 捕获到错误: 密码输入错误1次，帐户锁定1分钟
+2026-03-25 18:11:21,423 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第3行：账号=admin ==========
+2026-03-25 18:11:22,085 CheckErrorCapture.py--> check_and_capture_error 40: ERROR ----->⚠️ 捕获到错误: 密码输入错误1次，帐户锁定1分钟
+2026-03-25 18:11:28,153 RY_LoginTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第4行：账号=admin ==========
+2026-03-25 18:11:28,820 CheckErrorCapture.py--> check_and_capture_error 40: ERROR ----->⚠️ 捕获到错误: 密码输入错误1次，帐户锁定1分钟

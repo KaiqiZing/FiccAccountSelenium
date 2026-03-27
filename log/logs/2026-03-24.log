@@ -1,0 +1,12 @@
+2026-03-24 17:41:39,052 RY_LoginTestModule.py--> test_method 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-24 17:41:46,344 RY_LoginTestModule.py--> test_method 20: INFO ----->========== 开始执行：第3行：账号=admin ==========
+2026-03-24 17:41:53,584 RY_LoginTestModule.py--> test_method 20: INFO ----->========== 开始执行：第4行：账号=admin ==========
+2026-03-24 17:43:30,492 RY_LoginTestModule.py--> test_method 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-24 17:43:35,728 account_AuthorityManage_business.py--> LoginAccountTest 40: ERROR ----->添加管理员操作 not found: Message: 
+
+2026-03-24 17:43:39,683 RY_LoginTestModule.py--> test_method 20: INFO ----->========== 开始执行：第3行：账号=admin ==========
+2026-03-24 17:43:44,882 account_AuthorityManage_business.py--> LoginAccountTest 40: ERROR ----->添加管理员操作 not found: Message: 
+
+2026-03-24 17:43:48,864 RY_LoginTestModule.py--> test_method 20: INFO ----->========== 开始执行：第4行：账号=admin ==========
+2026-03-24 17:43:54,065 account_AuthorityManage_business.py--> LoginAccountTest 40: ERROR ----->添加管理员操作 not found: Message: 
+
