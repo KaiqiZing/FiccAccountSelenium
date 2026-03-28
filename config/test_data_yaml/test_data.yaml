@@ -3,10 +3,7 @@
 # 业务流程：用户新增（跨3个页面：基本信息页→部门角色页→确认提交页）
 
 # 页面1：用户基本信息页（输入框为主）
-user_manage_page_add:
+login_register_page:
   LoginName: "admin"
   LoginPassword: "admin123"
-  UserName: "auto_test_user_{random}"  # 动态随机参数（用户名）
-  UserNickName: "自动化测试_{random}"     # 动态随机参数（真实姓名）
-  MobilePhone: "${generate_random_phone_number}"                 # 动态随机参数（手机号，随机4位）
-  UserManagePassword: "${RandomEmail}"   # 动态随机参数（邮箱）
+
