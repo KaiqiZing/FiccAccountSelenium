@@ -1,27 +1,19 @@
 # coding=utf-8
-import datetime
 import os
 import pytest
-from selenium import webdriver
 
-from AccountUtils.AccountExcelUtil import ExcelUtil
 from business.RY_Login_Business import RYLoginBusiness
-# 变更点 1：引入新的 get_logger 函数
 from log.user_log import get_logger
 from util.CheckErrorCapture import check_and_capture_error
+from util.data_factory import DataFactory
 
-LOGIN_URL = "http://localhost:1024/login?redirect=%2Findex"
-# 提取一个全局的 base_dir，方便在 Excel 和截图路径中复用
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-
-def _excel_path() -> str:
-    return os.path.abspath(os.path.join(BASE_DIR, "..", "config", "RYAccountData.xlsx"))
+# Excel 账号表（与 YAML 用例共用统一数据工厂，静态缓存避免重复读盘）
+RY_ACCOUNT_EXCEL_PATH = os.path.abspath(os.path.join(BASE_DIR, "..", "config", "RYAccountData.xlsx"))
 
 
 def _load_login_cases():
-    excel_util = ExcelUtil(excel_path=_excel_path())
-    test_data = excel_util.get_data() or []
+    test_data = DataFactory().get_excel(RY_ACCOUNT_EXCEL_PATH) or []
 
     if len(test_data) <= 1:
         raise ValueError("Excel中未找到有效数据行：RYAccountData.xlsx")
@@ -62,21 +54,6 @@ def pytest_generate_tests(metafunc):
             [(False, -1, "", "")],
             ids=["excel_load_failed"],
         )
-
-
-@pytest.fixture(scope="function")
-def driver(should_run):
-    if not should_run:
-        yield None
-        return
-
-    d = webdriver.Chrome()
-    d.get(LOGIN_URL)
-    d.maximize_window()
-    yield d
-
-    # 变更点 2：移除了原先 yield 后面的页面等待逻辑，直接退出浏览器
-    d.quit()
 
 
 def test_login_account_from_excel(driver, should_run, row_num, username, password):

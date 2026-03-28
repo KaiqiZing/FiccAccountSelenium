@@ -1,6 +1,5 @@
 # coding=utf-8
 import pytest
-from selenium import webdriver
 from log.user_log import get_logger
 from util.data_manager import DataManager
 from business.RY_UserManage_Business import RYUserManageBusiness
@@ -8,17 +7,6 @@ from handle.RY_Handle.RY_UserManage_Handle import RYUserManageHandle
 from util.CheckErrorCapture import check_and_capture_error
 
 logger = get_logger()
-
-LOGIN_URL = "http://localhost:1024/login?redirect=%2Findex"
-
-
-@pytest.fixture(scope="function")
-def driver():
-    d = webdriver.Chrome()
-    d.get(LOGIN_URL)
-    d.maximize_window()
-    yield d
-    d.quit()
 
 
 class TestRYUserManageYaml:

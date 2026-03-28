@@ -1,0 +1,80 @@
+2026-03-28 21:07:18,899 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:07:18,901 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_1097], 手机号: [15153542193]
+2026-03-28 21:07:24,145 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_1097] 工作流测试通过 ==========
+2026-03-28 21:09:25,433 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:09:25,436 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_3477], 手机号: [13580258190]
+2026-03-28 21:09:30,685 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_3477] 工作流测试通过 ==========
+2026-03-28 21:09:32,898 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:09:32,899 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_2652], 手机号: [18757204764]
+2026-03-28 21:09:38,092 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_2652] 工作流测试通过 ==========
+2026-03-28 21:09:40,263 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:09:40,263 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_8373], 手机号: [13526293163]
+2026-03-28 21:09:45,477 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_8373] 工作流测试通过 ==========
+2026-03-28 21:09:47,632 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:09:47,632 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_9890], 手机号: [15935248613]
+2026-03-28 21:09:52,824 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_9890] 工作流测试通过 ==========
+2026-03-28 21:09:54,963 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:09:54,963 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_9670], 手机号: [14769727134]
+2026-03-28 21:10:00,173 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_9670] 工作流测试通过 ==========
+2026-03-28 21:14:12,170 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:14:12,171 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_4205], 手机号: [15218642162]
+2026-03-28 21:14:17,398 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_4205] 工作流测试通过 ==========
+2026-03-28 21:14:19,550 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:14:19,550 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_5333], 手机号: [13438167756]
+2026-03-28 21:14:24,850 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_5333] 工作流测试通过 ==========
+2026-03-28 21:14:27,099 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:14:27,099 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_1751], 手机号: [15860937841]
+2026-03-28 21:14:32,306 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_1751] 工作流测试通过 ==========
+2026-03-28 21:14:34,399 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:14:34,400 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_4046], 手机号: [15135490530]
+2026-03-28 21:14:39,630 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_4046] 工作流测试通过 ==========
+2026-03-28 21:14:41,812 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:14:41,812 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_5291], 手机号: [18422538600]
+2026-03-28 21:14:46,467 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_5291] 工作流测试通过 ==========
+2026-03-28 21:17:57,838 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:17:57,840 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_4589], 手机号: [17882116965]
+2026-03-28 21:18:03,034 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_4589] 工作流测试通过 ==========
+2026-03-28 21:18:32,498 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:18:32,500 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_6903], 手机号: [13726075499]
+2026-03-28 21:18:38,252 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_6903] 工作流测试通过 ==========
+2026-03-28 21:18:51,924 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-28 21:18:57,153 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
+2026-03-28 21:18:59,316 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:18:59,318 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_3499], 手机号: [17862779464]
+2026-03-28 21:19:04,545 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_3499] 工作流测试通过 ==========
+2026-03-28 21:58:45,190 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 21:58:45,322 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_4966], 手机号: [18227420724]
+2026-03-28 22:03:42,068 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 22:03:42,259 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_4529], 手机号: [17864423673]
+2026-03-28 22:03:47,461 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_4529] 工作流测试通过 ==========
+2026-03-28 22:04:12,651 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-28 22:04:16,844 CheckErrorCapture.py--> check_and_capture_error 40: ERROR ----->⚠️ 捕获到业务弹窗错误: 新增用户'dadadaddddda'失败，登录账号已存在
+2026-03-28 22:04:38,022 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 22:04:38,170 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_1412], 手机号: [17240674622]
+2026-03-28 22:04:43,395 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_1412] 工作流测试通过 ==========
+2026-03-28 22:05:26,950 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 22:05:27,108 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_5012], 手机号: [15740417582]
+2026-03-28 22:05:32,308 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_5012] 工作流测试通过 ==========
+2026-03-28 22:18:36,175 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 22:18:36,355 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_4327], 手机号: [14754231823]
+2026-03-28 22:19:13,950 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 22:19:14,116 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_2939], 手机号: [15792930625]
+2026-03-28 22:19:24,495 RY_UserManage_Business.py--> UserManageTest 40: ERROR ----->RY 登录失败：Message: 
+
+2026-03-28 22:20:48,334 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 22:20:48,488 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_2045], 手机号: [13968099353]
+2026-03-28 22:20:53,209 CommonWebDriverWaitOperaton.py--> click_params 30: WARNING ----->原生点击失败，尝试使用 JS 点击兜底: Message: element click intercepted: Element <span>...</span> is not clickable at point (78, 135). Other element would receive the click: <div class="el-dialog__wrapper" style="z-index: 2001;">...</div>
+  (Session info: chrome=146.0.7680.165)
+
+2026-03-28 22:20:54,291 CommonWebDriverWaitOperaton.py--> click_params 30: WARNING ----->原生点击失败，尝试使用 JS 点击兜底: Message: element click intercepted: Element <li role="menuitem" tabindex="-1" class="el-menu-item is-active" style="padding-left: 40px; color: rgb(64, 158, 255); background-color: rgb(48, 65, 86);">...</li> is not clickable at point (100, 187). Other element would receive the click: <div class="el-dialog__wrapper" style="z-index: 2001;">...</div>
+  (Session info: chrome=146.0.7680.165)
+
+2026-03-28 22:20:55,383 CommonWebDriverWaitOperaton.py--> click_params 30: WARNING ----->原生点击失败，尝试使用 JS 点击兜底: Message: element click intercepted: Element <span>...</span> is not clickable at point (655, 168). Other element would receive the click: <div class="el-dialog__wrapper" style="z-index: 2001;">...</div>
+  (Session info: chrome=146.0.7680.165)
+
+2026-03-28 22:20:57,285 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_2045] 工作流测试通过 ==========
+2026-03-28 22:23:33,163 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 22:23:33,340 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_5425], 手机号: [13418067065]
+2026-03-28 22:23:38,543 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_5425] 工作流测试通过 ==========
+2026-03-28 22:38:08,532 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-28 22:38:08,535 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_9319], 手机号: [18483238554]

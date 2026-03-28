@@ -16,6 +16,12 @@ class TemplateParser:
                     cls._func_registry[attr_name] = attr
 
     @classmethod
+    def register_functions(cls, mapping):
+        """显式注册占位符名 -> 可调用对象（推荐，避免整模块扫描）。"""
+        for name, fn in mapping.items():
+            cls._func_registry[name] = fn
+
+    @classmethod
     def parse_value(cls, value):
         if not isinstance(value, str):
             return value
