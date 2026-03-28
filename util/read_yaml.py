@@ -1,13 +1,17 @@
 # util/read_yaml.py
 import yaml
-from util.template_parser import TemplateParser
+import os
 
 class ReadYaml:
-    def __init__(self, file_path):
-        self.file_path = file_path # 路径逻辑参考之前
+    def __init__(self, file_name):
+        # 路径拼接逻辑建议参考你 read_ini.py 里的绝对路径实现
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        self.file_path = os.path.join(base_dir, "config", "test_data_yaml", file_name)
 
-    def get_decoded_data(self):
+    def get_raw_data(self):
+        """仅负责从磁盘读取原始 YAML 结构"""
         with open(self.file_path, 'r', encoding='utf-8') as f:
-            raw_data = yaml.safe_load(f)
-            # 核心：返回前进行动态解析
-            return TemplateParser.parse_data(raw_data)
+            return yaml.safe_load(f)
+
+
+

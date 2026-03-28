@@ -3,30 +3,8 @@
 # 业务流程：用户新增（跨3个页面：基本信息页→部门角色页→确认提交页）
 
 # 页面1：用户基本信息页（输入框为主）
-page1_basic_info:
-  username: "auto_test_user_{random}"  # 动态随机参数（用户名）
-  real_name: "自动化测试_{random}"     # 动态随机参数（真实姓名）
-  phone: "138{random}"                 # 动态随机参数（手机号，随机4位）
-  email: "test_{random}@example.com"   # 动态随机参数（邮箱）
-  id_card: "11010119900101{random}"    # 动态随机参数（身份证号，随机4位）
-  gender: "男"                         # 固定参数（下拉框默认值）
-
-# 页面2：部门角色选择页（下拉框为主）
-page2_department_role:
-  # 下拉框可选值（统一维护，便于后期修改）
-  department_options: ["技术部", "产品部", "测试部", "运营部"]
-  role_options: ["管理员", "普通员工", "访客", "测试工程师"]
-  # 测试用例使用的参数（固定/随机选择）
-  department: "测试部"                  # 固定参数（部门）
-  role: "测试工程师"                    # 固定参数（角色）
-
-# 页面3：确认提交页（固定参数）
-page3_confirm:
-  submit_remark: "自动化测试新增用户，无需审核"  # 固定参数（提交备注）
-  confirm_flag: "确认提交"                   # 固定参数（确认按钮文本，用于定位）
-
-# 全局配置（所有页面共用）
-global_config:
-  random_length: 4                      # 随机数长度（默认4位，可调整）
-  wait_time: 10                         # 页面元素等待时间（单位：秒）
-  base_url: "http://xxx.xxx.xxx:8080"   # 测试系统基础地址
+user_manage_page_add:
+  UserName: "auto_test_user_{random}"  # 动态随机参数（用户名）
+  UserName2: "自动化测试_{random}"     # 动态随机参数（真实姓名）
+  MobilePhone: "${generate_random_phone_number}"                 # 动态随机参数（手机号，随机4位）
+  Password: "${RandomEmail}"   # 动态随机参数（邮箱）

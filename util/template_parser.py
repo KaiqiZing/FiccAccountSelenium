@@ -1,39 +1,60 @@
 # util/template_parser.py
 import re
-from AccountUtils.AccountInfoSet import AccountInfoSet  # 引入你现有的工具
+import random  # 引入 Python 自带的随机库
 from util.context_manager import GlobalContext
 
 
 class TemplateParser:
-    @staticmethod
-    def parse_value(value):
-        """解析字符串中的占位符"""
+    _func_registry = {}
+
+    @classmethod
+    def register_module(cls, module_obj):
+        for attr_name in dir(module_obj):
+            if not attr_name.startswith("_"):
+                attr = getattr(module_obj, attr_name)
+                if callable(attr):
+                    cls._func_registry[attr_name] = attr
+
+    @classmethod
+    def parse_value(cls, value):
         if not isinstance(value, str):
             return value
 
-        # 1. 处理动态函数，如 ${generate_random_phone_number}
-        # 匹配 ${func_name}
-        func_match = re.findall(r'\$\{(.*?)\}', value)
-        for func_name in func_match:
-            # 如果函数存在于 AccountInfoSet 中，则调用它
-            if hasattr(AccountInfoSet, func_name):
-                real_val = getattr(AccountInfoSet, func_name)()
-                value = value.replace(f'${{{func_name}}}', str(real_val))
+        # ==========================================
+        # 👉 新增补丁：原生支持 YAML 中的 {random} 快捷语法
+        # ==========================================
+        if "{random}" in value:
+            # 自动生成 4 位随机数字（对应你 yaml 全局配置里的 random_length: 4）
+            rand_num = str(random.randint(1000, 9999))
+            # 将字符串中的 {random} 全部替换为这个随机数字
+            value = value.replace("{random}", rand_num)
 
-            # 2. 处理上下文变量，如 ${ctx.user_id}
-            elif func_name.startswith("ctx."):
-                ctx_key = func_name.split(".")[1]
+        # ==========================================
+        # 下面保留原有的标准高级语法 ${func_name} 解析逻辑
+        # ==========================================
+        pattern = r'\$\{(.*?)\}'
+        matches = re.findall(pattern, value)
+
+        for placeholder in matches:
+            real_val = None
+            if placeholder.startswith("ctx."):
+                ctx_key = placeholder.split(".", 1)[1]
                 real_val = GlobalContext.get(ctx_key)
-                value = value.replace(f'${{{func_name}}}', str(real_val))
+            elif placeholder in cls._func_registry:
+                real_val = cls._func_registry[placeholder]()
+
+            if real_val is not None:
+                if value == f"${{{placeholder}}}":
+                    return real_val
+                value = value.replace(f"${{{placeholder}}}", str(real_val))
 
         return value
 
     @classmethod
     def parse_data(cls, data):
-        """递归解析整个数据结构（列表或字典）"""
+        """递归解析字典和列表"""
         if isinstance(data, dict):
             return {k: cls.parse_data(v) for k, v in data.items()}
         elif isinstance(data, list):
             return [cls.parse_data(i) for i in data]
-        else:
-            return cls.parse_value(data)
+        return cls.parse_value(data)
