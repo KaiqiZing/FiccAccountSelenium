@@ -19,7 +19,7 @@ class FindElement:
         # 确保这里传入的 node 名称与你在 INI 文件中实际写的 [Section] 保持完全一致
         self.configs_map = {
             'login': (ReadIni("../config/LoginElement.ini"), "LoginElement"),
-            'UserManageModule': (ReadIni("../config/LoginElement.ini"), "UserManageElement")
+            'UserManageModule': (ReadIni("../config/UserManageElement.ini"), "UserManageElement")
         }
 
         # 定位器缓存，只缓存解析后的 (by, value) 字符串字典

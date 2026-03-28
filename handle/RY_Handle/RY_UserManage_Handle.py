@@ -33,4 +33,4 @@ class RYUserManageHandle:
         self.WebDriver.send_keys_params(self.fd.get_UserManageModule_element_txt("Password"), AccountInfoSet.RandomEmail())
 
         # 保存
-        self.WebDriver.wait_for_clickable(self.fd.get_UserManageModule_element_txt("EnsureButton"))
+        self.WebDriver.click_params(self.fd.get_UserManageModule_element_txt("EnsureButton"))
