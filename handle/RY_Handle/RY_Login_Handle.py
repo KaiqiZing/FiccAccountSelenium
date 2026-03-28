@@ -14,8 +14,8 @@ class RYLoginHandle:
 
     def RY_Login_Register_Element(self, username, password):
         # 修改点：去掉中间那个没用的 "click" 参数
-        self.WebDriver.send_keys_params(self.fd.get_Login_element_txt("email_element"), username)
-        self.WebDriver.send_keys_params(self.fd.get_Login_element_txt("password_elements"), password)
+        self.WebDriver.send_keys_params(self.fd.get_Login_element_txt("LoginName"), username)
+        self.WebDriver.send_keys_params(self.fd.get_Login_element_txt("LoginPassword"), password)
 
         # 修改点：直接使用封装好的原生点击，不再手动写 js
-        self.WebDriver.click_params(self.fd.get_Login_element_txt("submit"))
+        self.WebDriver.click_params(self.fd.get_Login_element_txt("LoginSubmit"))

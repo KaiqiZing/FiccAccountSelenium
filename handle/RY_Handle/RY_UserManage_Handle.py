@@ -26,11 +26,11 @@ class RYUserManageHandle:
 
         # 添加用户曾用名
         UserName2 = "dadadaddddda"
-        self.WebDriver.send_keys_params(self.fd.get_UserManageModule_element_txt("UserName2"), UserName2)
+        self.WebDriver.send_keys_params(self.fd.get_UserManageModule_element_txt("UserNickName"), UserName2)
 
         # 添加手机号和密码
         self.WebDriver.send_keys_params(self.fd.get_UserManageModule_element_txt("MobilePhone"), AccountInfoSet.generate_random_phone_number())
-        self.WebDriver.send_keys_params(self.fd.get_UserManageModule_element_txt("Password"), AccountInfoSet.RandomEmail())
+        self.WebDriver.send_keys_params(self.fd.get_UserManageModule_element_txt("UserManagePassword"), AccountInfoSet.RandomEmail())
 
         # 保存
         self.WebDriver.click_params(self.fd.get_UserManageModule_element_txt("EnsureButton"))
