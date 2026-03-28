@@ -1,0 +1,5 @@
+# 全局配置（所有页面共用）
+global_config:
+  random_length: 4                      # 随机数长度（默认4位，可调整）
+  wait_time: 10                         # 页面元素等待时间（单位：秒）
+  base_url: "http://localhost:1024/login?redirect=%2Findex"   # 测试系统基础地址
