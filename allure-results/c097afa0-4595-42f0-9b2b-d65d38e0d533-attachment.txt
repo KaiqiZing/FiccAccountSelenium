@@ -1,4 +1,0 @@
-[32mINFO    [0m RYTest:RY_UserManageTestModuleYmal.py:27 ========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
-[35mDEBUG   [0m RYTest:cache_manager.py:42 缓存写入: yaml::test_data.yaml (TTL=None)
-[32mINFO    [0m RYTest:RY_UserManageTestModuleYmal.py:38 动态数据加载成功 -> 用户: [auto_test_user_5012], 手机号: [15740417582]
-[32mINFO    [0m RYTest:RY_UserManageTestModuleYmal.py:53 ========== 执行成功：用户 [auto_test_user_5012] 工作流测试通过 ==========

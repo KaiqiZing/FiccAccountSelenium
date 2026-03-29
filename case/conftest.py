@@ -2,30 +2,39 @@
 """case 级 Pytest 配置：基础地址、浏览器 driver、失败截图。"""
 from __future__ import annotations
 
-import os
-import time
 from typing import Optional
 
 import pytest
-from selenium import webdriver
 
+from common.exceptions import ConfigError
+from config.settings import Config
 from util.data_factory import DataFactory
+from util.driver_factory import DriverFactory
+from util.screenshot_util import ScreenshotUtil
 
 _BASE_URL_CACHE: Optional[str] = None
 
 
 def get_base_url() -> str:
     """
-    从 config/test_data_yaml/base_config.yaml 读取 global_config.base_url。
-    进程内只解析一次，避免每条用例重复读盘。
+    优先从统一配置中心读取 base_url，旧 base_config.yaml 仍作为兜底。
     """
     global _BASE_URL_CACHE
     if _BASE_URL_CACHE is None:
-        cfg = DataFactory().get_yaml("base_config.yaml", is_parse=False)
-        url = (cfg.get("global_config") or {}).get("base_url")
+        url = None
+        try:
+            config = Config()
+            env_config = config.get_env_config()
+            url = env_config.get("base_url")
+        except ConfigError:
+            url = None
+
+        if not url:
+            cfg = DataFactory().get_yaml("base_config.yaml", is_parse=False)
+            url = (cfg.get("global_config") or {}).get("base_url")
         if not url:
             raise ValueError(
-                "请在 config/test_data_yaml/base_config.yaml 中配置 global_config.base_url"
+                "请在 config/settings.yaml 或 config/test_data_yaml/base_config.yaml 中配置 base_url"
             )
         _BASE_URL_CACHE = str(url).strip()
     return _BASE_URL_CACHE
@@ -45,9 +54,8 @@ def driver(request):
             yield None
             return
 
-    d = webdriver.Chrome()
+    d = DriverFactory.create_driver()
     d.get(base_url)
-    d.maximize_window()
     yield d
     d.quit()
 
@@ -65,15 +73,12 @@ def pytest_runtest_makereport(item, call):
         if "driver" in item.fixturenames:
             drv = item.funcargs.get("driver")
             if drv:
-                base_dir = os.path.dirname(os.path.abspath(__file__))
-                screenshot_dir = os.path.join(base_dir, "screenshots")
-                os.makedirs(screenshot_dir, exist_ok=True)
+                on_failure = True
+                try:
+                    on_failure = bool(Config().get("screenshot.on_failure", True))
+                except ConfigError:
+                    on_failure = True
 
-                timestamp = time.strftime("%Y%m%d_%H%M%S")
-                node_name = item.name.replace("/", "_").replace(":", "_")
-                screenshot_path = os.path.join(
-                    screenshot_dir, f"CRASH_{node_name}_{timestamp}.png"
-                )
-
-                drv.save_screenshot(screenshot_path)
-                print(f"\n📸 [全局拦截] 用例失败，已保存崩溃现场截图: {screenshot_path}")
+                if on_failure:
+                    screenshot_path = ScreenshotUtil.capture(drv, item.name)
+                    print(f"\n[全局拦截] 用例失败，已保存崩溃现场截图: {screenshot_path}")

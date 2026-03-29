@@ -1,0 +1,21 @@
+env:
+  active: test
+  test:
+    base_url: "http://localhost:1024/login?redirect=%2Findex"
+    timeout: 10
+  prod:
+    base_url: "https://prod.example.com"
+    timeout: 10
+browser:
+  type: chrome
+  headless: false
+  chrome_driver_path: "/usr/local/bin/ChromeDriver"
+  implicit_wait: 0
+  page_load_timeout: 30
+  window_size: [1920, 1080]
+  maximize_window: true
+screenshot:
+  on_failure: true
+  path: logs/screenshots
+legacy:
+  base_config_file: config/test_data_yaml/base_config.yaml

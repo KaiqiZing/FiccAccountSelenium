@@ -1,0 +1,12 @@
+2026-03-29 10:19:20,830 driver_factory.py--> _create_chrome 30: WARNING ----->未安装 webdriver-manager，改为使用本地 ChromeDriver。
+2026-03-29 10:19:35,086 driver_factory.py--> _create_chrome 30: WARNING ----->未安装 webdriver-manager，改为使用本地 ChromeDriver。
+2026-03-29 10:19:50,302 driver_factory.py--> _create_chrome 30: WARNING ----->未安装 webdriver-manager，改为使用本地 ChromeDriver。
+2026-03-29 10:35:43,524 driver_factory.py--> _create_chrome 30: WARNING ----->未安装 webdriver-manager，改为使用本地 ChromeDriver。
+2026-03-29 10:36:49,227 driver_factory.py--> _create_chrome 30: WARNING ----->未安装 webdriver-manager，改为使用本地 ChromeDriver。
+2026-03-29 10:49:28,108 driver_factory.py--> _create_chrome 30: WARNING ----->未安装 webdriver-manager，改为使用本地 ChromeDriver。
+2026-03-29 10:49:29,308 driver_factory.py--> create_driver 20: INFO ----->浏览器已启动: type=chrome, headless=False
+2026-03-29 10:55:16,637 driver_factory.py--> _create_chrome 30: WARNING ----->未安装 webdriver-manager，改为使用本地 ChromeDriver。
+2026-03-29 10:55:17,810 driver_factory.py--> create_driver 20: INFO ----->浏览器已启动: type=chrome, headless=False
+2026-03-29 10:55:18,218 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-29 10:55:18,350 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_3554], 手机号: [13787372249]
+2026-03-29 10:55:23,618 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_3554] 工作流测试通过 ==========

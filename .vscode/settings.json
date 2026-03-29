@@ -1,0 +1,4 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.seleniumdemo1/bin/python",
+  "python.terminal.activateEnvironment": true
+}
