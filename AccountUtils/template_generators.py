@@ -14,6 +14,7 @@ def _build_registry() -> Dict[str, Any]:
         "RandomIDCards": id_card.RandomIDCards,
         "RandomEmail": contact.RandomEmail,
         "generate_random_phone_number": contact.generate_random_phone_number,
+        "generate_random_password": common.generate_random_password,
         "random_param": contact.random_param,
         "random_param_ZZbank": finance.random_param_ZZbank,
         "calendar_time": common.calendar_time,

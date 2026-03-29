@@ -1,7 +1,18 @@
 # util/template_parser.py
 import re
-import random  # 引入 Python 自带的随机库
+import random
 from util.context_manager import GlobalContext
+
+_DEFAULT_RANDOM_LENGTH = 4
+
+
+def _get_random_length() -> int:
+    try:
+        from util.data_factory import DataFactory
+        cfg = DataFactory().get_yaml("base_config.yaml", is_parse=False)
+        return int((cfg.get("global_config") or {}).get("random_length", _DEFAULT_RANDOM_LENGTH))
+    except Exception:
+        return _DEFAULT_RANDOM_LENGTH
 
 
 class TemplateParser:
@@ -26,13 +37,11 @@ class TemplateParser:
         if not isinstance(value, str):
             return value
 
-        # ==========================================
-        # 👉 新增补丁：原生支持 YAML 中的 {random} 快捷语法
-        # ==========================================
         if "{random}" in value:
-            # 自动生成 4 位随机数字（对应你 yaml 全局配置里的 random_length: 4）
-            rand_num = str(random.randint(1000, 9999))
-            # 将字符串中的 {random} 全部替换为这个随机数字
+            n = _get_random_length()
+            low = 10 ** (n - 1)
+            high = 10 ** n - 1
+            rand_num = str(random.randint(low, high))
             value = value.replace("{random}", rand_num)
 
         # ==========================================

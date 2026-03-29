@@ -9,4 +9,4 @@ user_manage_page_add:
   UserName: "auto_test_user_{random}"  # 动态随机参数（用户名）
   UserNickName: "自动化测试_{random}"     # 动态随机参数（真实姓名）
   MobilePhone: "${generate_random_phone_number}"                 # 动态随机参数（手机号，随机4位）
-  UserManagePassword: "${RandomEmail}"   # 动态随机参数（邮箱）
+  UserManagePassword: "${generate_random_password}"   # 动态随机密码（含大小写+数字+特殊字符）

@@ -1,5 +1,7 @@
 # coding=utf-8
 import os
+
+import allure
 import pytest
 
 from business.RY_Login_Business import RYLoginBusiness
@@ -56,6 +58,8 @@ def pytest_generate_tests(metafunc):
         )
 
 
+@allure.feature("账号登录")
+@allure.story("Excel 数据驱动登录验证")
 def test_login_account_from_excel(driver, should_run, row_num, username, password):
     logger = get_logger()
 
@@ -63,17 +67,15 @@ def test_login_account_from_excel(driver, should_run, row_num, username, passwor
         pytest.fail(f"Excel读取失败：{globals().get('_excel_load_error', 'unknown error')}")
 
     case_desc = f"第{row_num}行：账号={username}"
+    allure.dynamic.title(f"Excel 登录 - {case_desc}")
     logger.info(f"========== 开始执行：{case_desc} ==========")
 
-    biz = RYLoginBusiness(driver)
-    biz.LoginTest(username, password)
+    with allure.step(f"执行登录: {username}"):
+        biz = RYLoginBusiness(driver)
+        biz.LoginTest(username, password)
 
-    # 只关注业务逻辑：如果有红色错误弹窗，就主动把用例 Fail 掉
-    # Fail 之后，conftest.py 会自动接管并截取一张 CRASH 截图
-    if check_and_capture_error(driver):
-        pytest.fail(f"登录失败，出现了错误弹窗：{case_desc}")
-
-    # 如果代码中途因为元素找不到等问题抛出 Exception 崩溃了
-    # 也会被 conftest.py 自动拦截截图，无需这里操心
+    with allure.step("检查是否出现错误弹窗"):
+        if check_and_capture_error(driver):
+            pytest.fail(f"登录失败，出现了错误弹窗：{case_desc}")
 
     logger.info(f"========== 执行成功：{case_desc} ==========")

@@ -2,7 +2,7 @@
 # coding=utf-8
 from base.find_element import FindElement
 from log.user_log import get_logger
-from common.CommonWebDriverWaitOperaton import WebDriverWaitCommon
+from common.CommonWebDriverWaitOperation import WebDriverWaitCommon
 
 
 class RYLoginHandle:

@@ -10,3 +10,17 @@
 2026-03-29 10:55:18,218 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
 2026-03-29 10:55:18,350 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_3554], 手机号: [13787372249]
 2026-03-29 10:55:23,618 RY_UserManageTestModuleYmal.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_3554] 工作流测试通过 ==========
+2026-03-29 13:12:23,463 driver_factory.py--> _create_chrome 30: WARNING ----->未安装 webdriver-manager，改为使用本地 ChromeDriver。
+2026-03-29 13:12:24,711 driver_factory.py--> create_driver 20: INFO ----->浏览器已启动: type=chrome, headless=False
+2026-03-29 13:12:25,186 RY_UserManageTestModuleYaml.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-29 13:12:25,406 RY_UserManageTestModuleYaml.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_4897], 手机号: [13872265620]
+2026-03-29 13:12:37,882 RY_UserManage_Business.py--> AddUser 40: ERROR ----->RY 用户新增失败：等待元素可点击失败，未找到目标元素 / 定位器: //*[@id="app"]/div[1]/div[1]/div[2]/div[1]/div/ul/div[2]/li/div/span / 截图: /Users/kaka/Desktop/FiccAccountSelenium/logs/screenshots/page_等待元素可点击__[@id=_app_]_div[1]_div[1]_div[2]_div[1]_div_ul_div[2]_li_div_span_20260329_131235.png
+2026-03-29 13:14:50,866 driver_factory.py--> _create_chrome 30: WARNING ----->未安装 webdriver-manager，改为使用本地 ChromeDriver。
+2026-03-29 13:14:51,705 driver_factory.py--> create_driver 20: INFO ----->浏览器已启动: type=chrome, headless=False
+2026-03-29 13:14:52,085 RY_UserManageTestModuleYaml.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 开始执行：YAML 数据驱动的用户管理工作流 ==========
+2026-03-29 13:14:52,250 RY_UserManageTestModuleYaml.py--> test_add_user_workflow_from_yaml 20: INFO ----->动态数据加载成功 -> 用户: [auto_test_user_1475], 手机号: [13922328919]
+2026-03-29 13:14:57,409 RY_UserManageTestModuleYaml.py--> test_add_user_workflow_from_yaml 20: INFO ----->========== 执行成功：用户 [auto_test_user_1475] 工作流测试通过 ==========
+2026-03-29 13:15:05,681 driver_factory.py--> _create_chrome 30: WARNING ----->未安装 webdriver-manager，改为使用本地 ChromeDriver。
+2026-03-29 13:15:06,363 driver_factory.py--> create_driver 20: INFO ----->浏览器已启动: type=chrome, headless=False
+2026-03-29 13:15:06,741 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 开始执行：第2行：账号=admin ==========
+2026-03-29 13:15:08,467 RY_UserManageTestModule.py--> test_login_account_from_excel 20: INFO ----->========== 执行成功：第2行：账号=admin ==========
