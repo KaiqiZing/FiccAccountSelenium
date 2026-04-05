@@ -1,0 +1,12 @@
+# OCR 相关重量级依赖，仅在需要验证码识别功能时安装
+# 安装方式: pip install -r requirements-ocr.txt
+-r requirements.txt
+ddddocr==1.0.6
+flatbuffers==24.3.25
+numpy==1.26.4
+onnxruntime==1.17.3
+protobuf==5.26.1
+mpmath==1.3.0
+sympy==1.12
+packaging==24.0
+pyreadline3==3.4.1

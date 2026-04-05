@@ -118,7 +118,3 @@ class DataFactory:
     def cache_stats(self) -> dict:
         return self._cache.stats
 
-
-if __name__ == "__main__":
-    f = DataFactory()
-    print(f.get_yaml("test_data.yaml"))

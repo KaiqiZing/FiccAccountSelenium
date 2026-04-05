@@ -1,0 +1,30 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*.pyo
+
+# macOS
+.DS_Store
+
+# Virtual environments
+.venv/
+.seleniumdemo1/
+
+# IDE
+.idea/
+
+# Logs
+log/logs/
+
+# Allure & reports
+allure-results/
+report/
+
+# Screenshots
+screenshots/
+
+# Egg metadata
+*.egg-info/
+
+# Cursor project cache
+.cursor/.DS_Store
